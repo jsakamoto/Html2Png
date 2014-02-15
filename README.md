@@ -1,7 +1,7 @@
 Html2Png
 ========
 
-[http://html2png.apphb.com/](http://html2png.apphb.com/)
+[https//html2png.apphb.com/](https://html2png.apphb.com/)
 
 What's this?
 ------------
