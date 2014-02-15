@@ -13,3 +13,7 @@ Powered by [PhantomJS](http://phantomjs.org/),
 and hosted by [AppHarbor](https://appharbor.com/).
 
 > Microsoft Windows Azure Websites does not work because Azure Websites does not allow executing external process such as PhantomJS.exe.
+
+License
+-------
+[GNU GENERAL PUBLIC LICENSE Version 2](LICENSE)
