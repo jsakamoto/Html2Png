@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Html2Png</title>
+    <style>
+        * {
+            font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+        }
+        input[type=number] {
+            text-align:right;
+            width:5em;
+        }
+        textarea {
+            width:80%;
+            height:20em;
+            font-family:Consolas, 'Lucida Console', 'DejaVu Sans Mono', monospace;
+        }
+        form label {
+            display:inline-block;
+            width:6em;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Html2Png
+    </h1>
+    <form action="/Html2Png" method="post" target="_blank">
+        <div>
+            <label for="width">Width</label>
+            <input type="number" value="800" id="width" name="width" />px
+        </div>
+        <div>
+            <label for="height">Height</label>
+            <input type="number" value="600" id="height" name="height" />px
+        </div>
+        <div>
+            <label for="html">HTML</label>
+            <textarea id="html" name="html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Html2Png&lt;/title&gt;
+    &lt;style&gt;
+        * {
+            font-family: &#39;Lucida Sans Unicode&#39;, &#39;Lucida Grande&#39;, &#39;Lucida Sans&#39;, &#39;DejaVu Sans Condensed&#39;, sans-serif;
+        }
+
+        input[type=number] {
+            text-align: right;
+            width: 5em;
+        }
+
+        textarea {
+            width: 80%;
+            height: 20em;
+        }
+
+        form label {
+            display: inline-block;
+            width: 6em;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;
+        Html2Png
+    &lt;/h1&gt;
+    &lt;form&gt;
+        &lt;div&gt;
+            &lt;label for=&quot;width&quot;&gt;Width&lt;/label&gt;
+            &lt;input type=&quot;number&quot; value=&quot;800&quot; id=&quot;width&quot; name=&quot;width&quot; /&gt;px
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;label for=&quot;height&quot;&gt;Height&lt;/label&gt;
+            &lt;input type=&quot;number&quot; value=&quot;600&quot; id=&quot;height&quot; name=&quot;height&quot; /&gt;px
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;label for=&quot;html&quot;&gt;HTML&lt;/label&gt;
+            &lt;textarea id=&quot;html&quot; name=&quot;html&quot;&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;input type=&quot;submit&quot; value=&quot;HTML to PNG&quot; /&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;            </textarea>
+        </div>
+        <div>
+            <label></label>
+            <input type="submit" value="HTML to PNG" />
+        </div>
+    </form>
+</body>
+</html>

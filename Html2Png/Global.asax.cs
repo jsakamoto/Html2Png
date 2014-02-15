@@ -11,8 +11,11 @@ namespace Html2Png
     {
         protected void Application_Start()
         {
-            AreaRegistration.RegisterAllAreas();
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            RouteTable.Routes.MapRoute(
+                name: "Default",
+                url: "{action}/{id}",
+                defaults: new { controller = "Default", action = "Index", id = UrlParameter.Optional }
+            );
         }
     }
 }
