@@ -2,22 +2,78 @@
 <html>
 <head>
     <title>Html2Png</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="twitter:card" content="summary">
+    <meta property="og:title" content="Html2Png" />
+    <meta property="og:description" content="Html2Png convert HTML string to PNG image." />
+    <meta property="og:url" content="https://html2png.apphb.com/" />
+    <!-- The size of ogpimage.png is 120px x 120px. -->
+    <!--
+    <meta property="og:image" content="https://html2png.apphb.com/Content/images/ogpimage.png" />
+    -->
+    <meta name="keywords" content="Html2Png" />
+    <meta name="description" content="Html2Png convert HTML string to PNG image." />
     <style>
         * {
             font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+            background-repeat: no-repeat;
+            background-position: left center;
         }
+
         input[type=number] {
-            text-align:right;
-            width:5em;
+            text-align: right;
+            width: 5em;
         }
+
         textarea {
-            width:80%;
-            height:20em;
-            font-family:Consolas, 'Lucida Console', 'DejaVu Sans Mono', monospace;
+            width: 80%;
+            height: 20em;
+            font-family: Consolas, 'Lucida Console', 'DejaVu Sans Mono', monospace;
         }
+
         form label {
-            display:inline-block;
-            width:6em;
+            display: inline-block;
+            width: 6em;
+        }
+
+        hr {
+            margin-top: 2em;
+        }
+
+        .powered-by {
+            height: 20px;
+            line-height: 20px;
+            font-size: 14px;
+            font-style: italic;
+            display: inline-block;
+            color: #808080;
+        }
+
+            .powered-by:after {
+                content: "|";
+            }
+
+            .powered-by a {
+                margin-left: 4px;
+                padding-left: 20px;
+                display: inline-block;
+                -moz-background-size: 16px;
+                -o-background-size: 16px;
+                -webkit-background-size: 16px;
+                background-size: 16px;
+            }
+
+        .phantomjs a {
+            background-image: url(http://phantomjs.org/img/favicon.ico);
+        }
+
+        .apphb a {
+            background-image: url(https://appharbor.com/favicon.ico);
+        }
+
+        .github a {
+            background-image: url(https://github.com/favicon.ico);
         }
     </style>
 </head>
@@ -85,12 +141,27 @@
         &lt;/div&gt;
     &lt;/form&gt;
 &lt;/body&gt;
-&lt;/html&gt;            </textarea>
+&lt;/html&gt;            
+            </textarea>
         </div>
         <div>
             <label></label>
             <input type="submit" value="HTML to PNG" />
         </div>
     </form>
+
+    <hr />
+
+    <footer>
+        <div class="powered-by phantomjs">
+            Powered by <a href="http://phantomjs.org/" target="_blank">PhantomJS</a>
+        </div>
+        <div class="powered-by apphb">
+            Hosted by <a href="https://appharbor.com/" target="_blank">AppHarbor</a>
+        </div>
+        <div class="powered-by github">
+            Source code at <a href="https://github.com/jsakamoto/Html2Png" target="_blank">GitHub</a>, GPL V2.
+        </div>
+    </footer>
 </body>
 </html>
