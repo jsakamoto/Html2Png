@@ -13,8 +13,8 @@ namespace Html2Png
         {
             RouteTable.Routes.MapRoute(
                 name: "Default",
-                url: "{action}/{id}",
-                defaults: new { controller = "Default", action = "Index", id = UrlParameter.Optional }
+                url: "Html2Png",
+                defaults: new { controller = "Default", action = "Html2Png", id = UrlParameter.Optional }
             );
         }
     }
